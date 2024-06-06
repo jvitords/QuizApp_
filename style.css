@@ -18,7 +18,9 @@
     --bg-acessibilidade: #f6e7ff;
     --shadow: 0px 16px 40px 0px rgba(143, 160, 193, 0.14);
     --bg-mobile: url(./assets/images/pattern-background-mobile-light.svg);
+    --bg-desktop: url(./assets/images /pattern-background-desktop-light.svg);
 }
+
 body {
     height: 100svh;
     background: var(--bg-mobile) var(--bg-color);
@@ -92,18 +94,15 @@ main {
     font-weight: 500;
     color: var(--primary-text-color);
 }
-
 .assuntos button div {
     width: 40px;
     height: 40px;
     padding: 5px;
     border-radius: 5px;
 }
-
 .assuntos button img {
     width: 100%;
 }
-
 .botao_html div {
     background: var(--bg-html);
 }
@@ -113,6 +112,55 @@ main {
 .botao_js div {
     background: var(--bg-js);
 }
+
 .botao_acessibilidade div {
     background: var(--bg-acessibilidade);
+}
+
+@media(min-width: 1100px) {
+    body {
+        background: var(--bg-desktop) var(--bg-color);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    header {
+        margin-block: 81px;
+    }
+
+
+    main {
+        display: flex;
+        max-width: 1160px;
+        margin-inline: auto;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    .boas_vindas h1 {
+        font-size: 64px;
+        margin-bottom: 48px;
+    }
+
+    .boas_vindas p {
+        font-size: 20px;
+    }
+
+    .assuntos {
+        gap: 24px;
+    }
+
+    .assuntos button {
+        font-size: 28px;
+        padding: 20px;
+        gap: 32px;
+    }
+
+    .assuntos button div {
+        width: 56px;
+        height: 56px;
+        padding: 8px;
+    }
 }
