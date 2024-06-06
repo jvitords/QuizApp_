@@ -11,8 +11,15 @@
     --white: #fff;
     --secondary_text_color: #626c7f;
     --primary-text-color: #313e51;
+    --button-bg: #fff;
+    --bg-html: #fff1e9;
+    --bg-css: #e0fdef;
+    --bg-js: #ebf0ff;
+    --bg-acessibilidade: #f6e7ff;
+    --shadow: 0px 16px 40px 0px rgba(143, 160, 193, 0.14);
     --bg-mobile: url(./assets/images/pattern-background-mobile-light.svg);
 }
+
 body {
     height: 100svh;
     background: var(--bg-mobile) var(--bg-color);
@@ -50,27 +57,54 @@ header {
 main {
     padding: 32px 24px;
 }
-
-main h1 {
 .boas_vindas {
     margin-bottom: 40px;
 }
-
 .boas_vindas h1 {
     font-size: 40px;
     font-weight: 300;
     color: var(--primary-text-color);
-}
     margin-bottom: 16px;
 }
-
 .boas_vindas h1 strong {
     font-weight: 500;
 }
-
 .boas_vindas p {
     color: var(--secondary_text_color);
     font-size: 14px;
     line-height: 150%;
     font-style: italic;
+}
+
+.assuntos {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.assuntos button {
+    border: none;
+    background: var(--button-bg);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.botao_html div {
+    background: var(--bg-html);
+}
+
+.botao_css div {
+    background: var(--bg-css);
+}
+
+.botao_js div {
+    background: var(--bg-js);
+}
+
+.botao_acessibilidade div {
+    background: var(--bg-acessibilidade);
 }
