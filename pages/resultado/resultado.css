@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,7 +10,7 @@
     --bg-span: #f4f6fa;
     --color-span: #626c7f;
     --purple: #a729f5;
-    --purple-hover: rgba(167, 41, 245, 0.7);
+    --purple-houver: rgba(167, 41, 245, 0.7); 
     --primary-text-color: #313e51;
     --secondary-text-color: #626c7f;
     --pontuacao-bg: #fff;
@@ -19,12 +19,10 @@
     --bg-css: #e0fdef;
     --bg-javascript: #ebf0ff;
     --bg-acessibilidade: #f6e7ff;
-    --white: #fff;
-    --green: #26d782;
-    --red: #ee5454;
+    --white: #fff;   
     --bg-mobile: url(../../assets/images/pattern-background-mobile-light.svg);
     --bg-desktop: url(../../assets/images/pattern-background-desktop-light.svg);
-}
+} 
 body.escuro {
     --bg-color: #313e51;
     --color-span: #313e51;
@@ -44,14 +42,14 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 16px 24px;
+    padding: 16px 24px; 
 }
 .assunto {
     display: flex;
     align-items: center;
     gap: 16px;
 }
-.assunto_icone {
+.assunto_icone{
     background: var(--bg-acessibilidade);
     width: 40px;
     height: 40px;
@@ -71,18 +69,21 @@ header {
     display: flex;
     align-items: center;
     gap: 8px;
-}
+} 
 .tema img {
     width: 16px;
 }
 .tema button {
     height: 20px;
     width: 32px;
-    background-color: var(--purple);
+    background: var(--purple);
     border: 0;
     border-radius: 999px;
     padding: 4px;
+    display: flex;
+    cursor: pointer;
 }
+
 .tema button div {
     background: var(--white);
     width: 12px;
@@ -106,10 +107,10 @@ main h2 strong {
     padding: 32px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
     gap: 16px;
     border-radius: 12px;
-    margin-bottom: 12px;
+    margin-bottom:12px;
     box-shadow: var(--shadow);
 }
 .pontuacao strong {
@@ -130,12 +131,11 @@ main button {
     width: 100%;
     font-size: 18px;
     font-weight: 500;
-    transition:  0.3s;
+    transition: background 0.3s;
     box-shadow: var(--shadow);
 }
-
 main button:hover {
-    background: var(--purple-hover);
+    background: var(--purple-houver);
     cursor: pointer;
 }
 @media(min-width: 1100px) {
@@ -149,55 +149,55 @@ main button:hover {
         margin-block: 81px;
         max-width: 1160px;
         margin-inline: auto;
-    }
-    .assunto_icone {
+     }
+     .assunto_icone {
         width: 56px;
         height: 56px;
         padding: 8px;
-    }
-    .assunto h1 {
+     }
+     .assunto h1 {
         font-size: 28px;
-    }
+     }
     .tema {
         gap: 16px;
-    }
-    .tema img {
-        width: 24px;
-    }
-    .tema button {
-        width: 48px;
+     }
+     .tema img {
+         width: 24px;
+     }
+     .tema button {
+        width: 48px;     
         height: 28px;
-    }
-    .tema button div {
+     }
+     .tema button div {
         width: 20px;
         height: 20px;
-    }
-    main {
+     }
+     main {
         display: flex;
         gap: 140px;
-        max-width: 1160px;
+        max-width:1160px;
         margin-inline: auto;
-    }
-    main h2,
-    main > div {
+     }
+     main h2, 
+     main > div {
         width: 100%;
-    }
-    main h2 {
+     }
+     main h2 {
         font-size: 64px;
-    }
-    .pontuacao {
+     }
+     .pontuacao {
         border-radius: 24px;
-        margin-bottom: 32px;
-    }
-    .pontuacao strong {
+        margin-bottom: 32px;  
+     }
+     .pontuacao strong {
         font-size: 144px;
-    }
-    .pontuacao p {
+     }
+     .pontuacao p {
         font-size: 24px;
-    }
-    main button {
+     }
+     main button {
         font-size: 22px;
         padding: 24px;
         border-radius: 24px;
-    }
+     }
 }
